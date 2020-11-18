@@ -1,0 +1,256 @@
+/*
+    font face
+ */
+@font-face {
+  font-family: "HelveticaNeueCyr-Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Medium";
+  src: url("../fonts/HelveticaNeueCyr-Medium.woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff");
+}
+
+/*
+    general style
+ */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1365px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 979px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 94%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+    min-width: 290px;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1, h2, h4 {
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
+  line-height: 1;
+}
+
+h1, h2 {
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #750c0c;
+}
+
+h3 {
+  font-family: "HelveticaNeueCyr-Medium", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h6 {
+  font-family: "HelveticaNeueCyr-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+p.quote {
+  font-size: 28px;
+  line-height: 28px;
+  color: #ffeded;
+}
+
+.button {
+  font-family: "HelveticaNeueCyr-Medium", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.delivery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery h6:nth-child(2) {
+  position: relative;
+}
+
+.delivery h6:nth-child(2):before, .delivery h6:nth-child(2):after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.delivery h6:nth-child(2):before {
+  left: -41px;
+}
+
+.delivery h6:nth-child(2):after {
+  right: -41px;
+}
+
+.sale {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 200px;
+  padding: 54px 0 46px;
+  background: -o-linear-gradient(313.74deg, #fff500 0%, #ff9900 102.3%);
+  background: linear-gradient(136.26deg, #fff500 0%, #ff9900 102.3%);
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+
+.sale h4 {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #750c0c;
+  margin-bottom: 10px;
+}
+
+/*
+    header style
+ */
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#270808), to(#b60f0f));
+  background: -o-linear-gradient(top, #270808 0%, #b60f0f 100%);
+  background: linear-gradient(180deg, #270808 0%, #b60f0f 100%);
+  padding: 30px 0 288px;
+}
+
+.header .delivery {
+  max-width: 694px;
+  margin: 0 auto;
+}
+
+.header .delivery h6 {
+  color: #ba6f6f;
+}
+
+.header .delivery h6:nth-child(2):before, .header .delivery h6:nth-child(2):after {
+  background: #ffffff;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 52.39px;
+}
+
+.header__content-img {
+  width: 708px;
+  width: 59%;
+}
+
+.header__content-img img.logo {
+  margin-left: 25.42%;
+}
+
+.header__content-img figure {
+  position: relative;
+  display: none;
+}
+
+.header__content-img figure .sale {
+  top: 81px;
+  left: 218px;
+}
+
+.header__content-img figure img {
+  margin: 0;
+  position: relative;
+  z-index: 9;
+}
+
+.header__content-info {
+  width: 41%;
+  margin-top: 96.61px;
+}
+
+/*# sourceMappingURL=style.css.map */

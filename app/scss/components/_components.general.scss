@@ -1,0 +1,152 @@
+/*
+    general style
+ */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $r, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  @include mq(xl) {
+    width: 1140px;
+  }
+
+  @include mq(lg) {
+    width: 960px;
+  }
+
+  @include mq(md) {
+    width: 720px;
+  }
+
+  @include mq(s) {
+    width: 94%;
+  }
+
+  @include mq(xs) {
+    width: 90%;
+    min-width: 290px;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  user-select: none;
+}
+
+h1, h2, h4 {
+  font-family: $b, sans-serif;
+  line-height: 1;
+}
+
+h1, h2 {
+  font-size: 72px;
+  text-transform: uppercase;
+  color: $dark-red;
+}
+
+h3 {
+  font-family: $m, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h6{
+  font-family: $m, sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+p {
+  &.quote {
+    font-size: 28px;
+    line-height: 28px;
+    color: $pale-red;
+  }
+}
+
+.button {
+  font-family: $m, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+
+  h6 {
+
+    &:nth-child(2) {
+      position: relative;
+
+      &:before, &:after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:before {
+        left: -41px;
+      }
+
+      &:after {
+        right: -41px;
+      }
+    }
+  }
+}
+
+.sale {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 54px 0 46px;
+  background: $main-gradient2;
+  box-shadow: $outer-shadow1;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+
+  h4 {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-red;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,37 @@
+@mixin mq($point) {
+  @if $point == xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $point == s {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $point == md {
+    @media (max-width: 979px) {
+      @content;
+    }
+  }
+
+  @if $point == lg {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $point == xl {
+    @media (max-width: 1365px) {
+      @content;
+    }
+  }
+
+  @if $point == xxl {
+    @media (max-width: 1899px) {
+      @content;
+    }
+  }
+}

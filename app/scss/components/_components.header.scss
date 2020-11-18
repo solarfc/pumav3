@@ -1,0 +1,68 @@
+/*
+    header style
+ */
+
+.header {
+  background: $main-gradient;
+  padding: 30px 0 288px;
+
+  .delivery {
+    max-width: 694px;
+    margin: 0 auto;
+
+    h6 {
+      color: $pastel-red;
+
+      &:nth-child(2) {
+
+        &:before, &:after {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52.39px;
+
+    &-img {
+      width: 708px;
+      width: 59%;
+
+      img.logo {
+        margin-left: 25.42%;
+      }
+
+      figure {
+        position: relative;
+        display: none;
+
+        .sale {
+          top: 81px;
+          left: 218px;
+
+          h4 {
+
+          }
+
+          h1 {
+
+          }
+        }
+
+        img {
+          margin: 0;
+          position: relative;
+          z-index: 9;
+        }
+      }
+    }
+
+    &-info {
+      width: 41%;
+      margin-top: 96.61px;
+    }
+  }
+}
