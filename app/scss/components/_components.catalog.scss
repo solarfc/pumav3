@@ -1,0 +1,565 @@
+/*
+    catalog start
+ */
+
+.catalog {
+  background: $pale-red;
+  box-shadow: $outer-shadow2;
+  padding: 79px 0 105px;
+  margin-top: -7px;
+
+  h3 {
+
+  }
+
+  .delivery {
+    max-width: 785px;
+    margin: 10px auto 88px;
+
+    h6 {
+      color: $grey;
+
+      span {
+        color: $red;
+      }
+
+      &:nth-child(2) {
+
+        &:before, &:after {
+          background: $red;
+        }
+      }
+    }
+  }
+
+  form {
+
+    .form-group {
+
+      input {
+        font-family: $m, sans-serif;
+        font-size: 15px;
+        line-height: 1;
+        color: $light-grey;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 24px 18px 14px;
+        box-shadow: $inner-shadow1;
+        border: none;
+
+        &::placeholder {
+          font-family: $m, sans-serif;
+          font-size: 15px;
+          line-height: 1;
+          color: $light-grey;
+          opacity: 1;
+        }
+
+        &:active, &:focus, &:required {
+          outline: none;
+        }
+      }
+
+      button {
+        border: none;
+        padding: 14.5px 0 16.5px;
+
+      }
+    }
+  }
+
+  &__block {
+    width: calc(100% + 35px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    left: -18px;
+
+    @include mq(lg) {
+      width: 100%;
+      left: 0;
+    }
+
+    &-model {
+      box-sizing: border-box;
+      width: 48.59%;
+      max-width: 600px;
+      padding: 57px 0 19px;
+      background: $white;
+      box-shadow: $outer-shadow2;
+      position: relative;
+
+      h5 {
+        text-align: right;
+        margin-right: 17px;
+
+        @include mq(lg) {
+          text-align: center;
+          margin-right: 0;
+        }
+      }
+
+      &__img {
+        position: absolute;
+
+        @include mq(lg) {
+          position: relative;
+          transform: translateX(-50%);
+        }
+
+        img {
+
+        }
+
+        h6 {
+          text-align: center;
+          color: $dark-pastel-red;
+          box-sizing: border-box;
+          width: 80px;
+          padding: 18px 0;
+          background: $orange;
+          border-radius: 50%;
+          position: absolute;
+
+          &:before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url("../img/catalog/star.png") no-repeat center/cover;
+            margin: 0 auto 9px;
+          }
+        }
+      }
+
+      ul {
+        width: 100%;
+        max-width: 315px;
+        margin: 15px 8px 33px auto;
+
+        @include mq(lg) {
+          margin-left: 25px;
+        }
+
+        li {
+          margin-bottom: 12px;
+
+          p {
+            font-size: 14px;
+            color: $grey;
+
+            span {
+              font-family: $b, sans-serif;
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &__photo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+
+        a {
+          width: 23.64%;
+          max-width: 130px;
+          filter: drop-shadow($outer-shadow2);
+
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            box-shadow: $outer-shadow2;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      &__info {
+        box-sizing: border-box;
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        margin: 21.11px auto 23px;
+
+        @include mq(lg) {
+          display: block;
+          text-align: center;
+        }
+
+        .price {
+
+        }
+
+        h6 {
+          color: $dark-red;
+          max-width: 132px;
+          text-align: right;
+          margin-top: 10px;
+
+          @include mq(lg) {
+            max-width: 100%;
+            text-align: center;
+          }
+        }
+      }
+
+      form {
+        box-sizing: border-box;
+        padding: 0 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form-group {
+          width: 49%;
+
+          input {
+            background: $pale-red;
+          }
+
+          button {
+
+          }
+
+          &.name, &.tel {
+            margin-bottom: 10px;
+          }
+        }
+
+        .select-box {
+          width: 49%;
+
+          .jq-selectbox {
+            width: 100%;
+
+            &__select {
+              font-family: $m ,sans-serif;
+              font-size: 15px;
+              line-height: 1;
+              color: $light-grey;
+              box-sizing: border-box;
+              height: auto;
+              padding: 25px 22px 15px;
+              background: $pale-red;
+              box-shadow: $inner-shadow1;
+              border: none;
+              border-radius: 0;
+              text-shadow: none;
+
+              &-text {
+                width: 100% !important;
+              }
+
+              &:after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 9px;
+                background: url("../img/catalog/arrow.png") no-repeat center/cover;
+                position: absolute;
+                top: 25.88px;
+                right: 17.64px;
+              }
+            }
+
+            &__trigger {
+              display: none;
+            }
+
+            &.opened {
+
+              .jq-selectbox__select {
+
+                &:after {
+                  transform: scale(1, -1);
+                }
+              }
+            }
+
+            &__dropdown {
+              font-family: $m, sans-serif;
+              font-size: 15px;
+              line-height: 1;
+              color: $light-grey;
+              background: $pale-red;
+              border: none;
+              border-radius: 0;
+              box-shadow: $inner-shadow1;
+
+              ul {
+                margin: 0;
+
+                li {
+                  font-family: inherit;
+                  font-size: inherit;
+                  line-height: inherit;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+      }
+
+      &.winter-yellow {
+
+        .catalog__block-model__img {
+          top: -9px;
+          left: 16px;
+
+          @include mq(xl) {
+            top: 0;
+            left: 0;
+          }
+
+          @include mq(lg) {
+            max-width: 343px;
+            left: 57%;
+          }
+
+          h6 {
+            top: 29px;
+            left: 4px;
+          }
+        }
+
+        &:before {
+          top: -151px;
+          left: 1254px;
+          width: 204px;
+          height: 238px;
+          background: url("../img/snow-f.png") no-repeat center/cover;
+        }
+      }
+
+      &.winter-black {
+
+        .catalog__block-model__img {
+          top: -9px;
+          left: 4px;
+
+          @include mq(xl) {
+            top: 0;
+            left: -8px;
+          }
+
+          @include mq(lg) {
+            max-width: 351px;
+            left: 57%;
+          }
+
+          h6 {
+            top: 29px;
+            left: 16px;
+          }
+        }
+      }
+
+      &.rihanna-black {
+        padding-top: 37px;
+        margin: 50px 0 87px;
+
+        h5 {
+          margin-right: 52px;
+
+          @include mq(lg) {
+            margin-right: 0;
+          }
+
+          br {
+
+            @include mq(lg) {
+              display: none;
+            }
+          }
+        }
+
+        ul {
+          margin-right: 0;
+        }
+
+        .catalog__block-model__img {
+          top: 17px;
+          left: 16.29px;
+
+          @include mq(xl) {
+            left: 0;
+          }
+
+          @include mq(lg) {
+            max-width: 330px;
+            left: 57%;
+          }
+
+          h6 {
+            top: 3px;
+            left: 3.71px;
+          }
+        }
+
+        &:before {
+          width: 290px;
+          height: 306px;
+          background: url("../img/snow-s.png") no-repeat center/cover;
+          top: -261.42px;
+          left: -290px;
+        }
+      }
+
+      &.rihanna-white {
+        padding-top: 37px;
+        margin: 50px 0 87px;
+
+        h5 {
+          margin-right: 52px;
+
+          @include mq(lg) {
+            margin-right: 0;
+          }
+
+          br {
+
+            @include mq(lg) {
+              display: none;
+            }
+          }
+        }
+
+        ul {
+          margin-right: 0;
+        }
+
+        .catalog__block-model__img {
+          top: 17px;
+          left: 16.17px;
+
+          @include mq(xl) {
+            max-width: 329px;
+            left: 0;
+          }
+
+          @include mq(lg) {
+            left: 57%;
+          }
+
+          h6 {
+            top: 3px;
+            left: 3.83px;
+          }
+        }
+
+        &:before {
+          width: 335px;
+          height: 362px;
+          background: url("../img/snow-t.png") no-repeat center/cover;
+          bottom: -524px;
+          right: -238px;
+        }
+      }
+    }
+  }
+
+  &__spray {
+    box-sizing: border-box;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include mq(lg) {
+      padding: 0;
+    }
+
+    &-img {
+      width: 20.56%;
+      max-width: 227px;
+      //width: 20.47%;
+      //max-width: 226px;
+
+      figure {
+        position: relative;
+        left: -13px;
+
+        @include mq(lg) {
+          left: -23px;
+        }
+      }
+
+      .price {
+        position: absolute;
+        bottom: 76px;
+        left: calc(20.56% + 48px);
+
+        @include mq(lg) {
+          left: calc(20.56% + 18px);
+        }
+      }
+    }
+
+    &-info {
+      width: 77.81%;
+      max-width: 859px;
+      margin-top: 23px;
+
+      h4 {
+        text-transform: uppercase;
+        color: $dark-red;
+      }
+
+      h3 {
+        text-align: left;
+        margin: 2px auto 21px;
+      }
+
+      p {
+        max-width: 669px;
+        color: $grey;
+        margin-bottom: 18px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      form {
+        display: flex;
+        margin-top: 90px;
+
+        .form-group {
+          width: 31.4%;
+          max-width: 270px;
+
+          input {
+            background: $white;
+          }
+
+          button {
+
+          }
+
+          &.tel {
+            margin-left: 10px;
+          }
+
+          &.order {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

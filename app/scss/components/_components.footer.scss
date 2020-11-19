@@ -1,0 +1,104 @@
+/*
+    footer style
+ */
+
+.footer {
+  background: $pale-red;
+  padding: 93px 0 16px;
+
+  &__content {
+    position: relative;
+
+    p.quote {
+      color: $grey;
+      max-width: 709px;
+      margin-left: auto;
+    }
+
+    .price {
+      margin: 154px 0 98px 50%;
+
+      span {
+
+        &.new-price {
+          color: $red;
+        }
+
+        &.old-price {
+          color: $light-grey;
+
+          &:after {
+            background: $light-grey;
+          }
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: -87px;
+      left: -4px;
+
+      .sale {
+        top: 210px;
+        right: -71px;
+      }
+
+      img {
+
+        &.image {
+          position: relative;
+          z-index: 9;
+        }
+
+        &.logo {
+          width: 250px;
+          position: absolute;
+          top: 13px;
+          left: 165px;
+          opacity: 0.3;
+        }
+      }
+    }
+
+    a.to-order {
+      margin: 0 auto;
+    }
+
+    h6 {
+      text-align: center;
+
+      &:first-of-type {
+        color: $pastel-red;
+        max-width: 245px;
+        margin: 12px auto 64px;
+      }
+
+      &.address {
+        color: $light-grey;
+
+        a {
+          display: inline-block;
+          color: inherit;
+        }
+      }
+    }
+
+    img.boot {
+      position: absolute;
+      bottom: -16px;
+      right: -360px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 290px;
+      height: 306px;
+      background: url("../img/snow-s.png") no-repeat center/cover;
+      position: absolute;
+      bottom: 80.41px;
+      left: -304.37px;
+    }
+  }
+}

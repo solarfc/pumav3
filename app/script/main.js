@@ -4,6 +4,36 @@ console.log(`width ${myWidth} \n height ${myHeight}`);
 
 window.onload = function () {
 
+    /*
+        fancybox settings
+     */
+
+    $.fancybox.defaults.loop = true;
+    $.fancybox.defaults.animationEffect = "fade";
+
+    /*
+        form styler
+     */
+
+    $(function () {
+        $('select').styler({
+            selectSmartPositioning: false
+        });
+    });
+
+    /*
+        review slider
+     */
+
+    $('.review__content-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0,
+        speed: 300,
+        arrow: true,
+        prevArrow: $('.prev-arrow'),
+        nextArrow: $('.next-arrow')
+    })
 
     // /*
     //     change href on mobile

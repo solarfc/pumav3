@@ -3,12 +3,14 @@
  */
 
 .header {
-  background: $main-gradient;
+  background: url("../img/header/bg.png") no-repeat center/cover, $main-gradient;
   padding: 30px 0 288px;
 
   .delivery {
     max-width: 694px;
     margin: 0 auto;
+    position: relative;
+    z-index: 9;
 
     h6 {
       color: $pastel-red;
@@ -26,22 +28,42 @@
     display: flex;
     justify-content: space-between;
     margin-top: 52.39px;
+    position: relative;
 
     &-img {
       width: 708px;
       width: 59%;
+      position: relative;
 
       img.logo {
         margin-left: 25.42%;
       }
 
       figure {
-        position: relative;
-        display: none;
+        width: 109%;
+        max-width: 769px;
+        position: absolute;
+        top: 139px;
+        left: 0;
+
+        @include mq(lg) {
+          top: 149px;
+        }
+
 
         .sale {
           top: 81px;
           left: 218px;
+
+          @include mq(xl) {
+            top: 71px;
+            left: 208px;
+          }
+
+          @include mq(lg) {
+            top: 41px;
+            left: 38px;
+          }
 
           h4 {
 
@@ -53,7 +75,7 @@
         }
 
         img {
-          margin: 0;
+          width: 100%;
           position: relative;
           z-index: 9;
         }
@@ -63,6 +85,69 @@
     &-info {
       width: 41%;
       margin-top: 96.61px;
+
+      p.quote {
+
+      }
+
+      .price {
+        margin: 55px auto 3px;
+      }
+
+      h6 {
+        color: $white;
+      }
+
+      a.to-order {
+        margin-top: 20px;
+      }
+
+      img.boot {
+        position: absolute;
+        bottom: -344px;
+        right: -297px;
+        z-index: 5;
+      }
+    }
+
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      width: 274px;
+      height: 694px;
+      background: url("../img/header/boy.png") no-repeat center/cover;
+      top: -157.39px;
+      left: -5px;
+      z-index: 8;
+
+      @include mq(xl) {
+        left: -25px;
+      }
+
+      @include mq(lg) {
+        width: 130px;
+        height: 319px;
+        top: -97.39px;
+        left: 0;
+      }
+    }
+
+    &:after {
+      width: 204px;
+      height: 178px;
+      background: url("../img/header/decor.png") no-repeat center/cover;
+      top: -97.39px;
+      right: 22px;
+
+      @include mq(lg) {
+        width: 124px;
+        height: 108px;
+        right: 0;
+      }
     }
   }
 }
