@@ -3,15 +3,29 @@
  */
 
 .advantages {
-  margin: -55px auto -155px;
-  position: relative;
-  z-index: 11;
+  background: $pale-red;
+  box-shadow: $outer-shadow2;
+  padding: 0 0 60px;
+  //margin: -55px auto -155px;
+  //position: relative;
+  //z-index: 11;
+  //
+  //@include mq(md) {
+  //  margin: -63px auto -160px;
+  //}
+
+  @include mq(md) {
+    padding-bottom: 41px;
+  }
 
   &__content {
     box-sizing: border-box;
     padding: 0 89px 0 91px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: -55px;
+    z-index: 9;
 
     @include mq(xl) {
       padding: 0 59px 0 61px;
@@ -21,16 +35,42 @@
       padding: 0;
     }
 
+    @include mq(md) {
+      top: -63px;
+    }
+
+    @include mq(s) {
+      flex-wrap: wrap;
+    }
+
+    @include mq(xs) {
+      display: block;
+    }
+
     &-block {
       box-sizing: border-box;
-      width: 18%;
-      max-width: 180px;
+      width: 19%;
+      max-width: 195px;
       padding: 23px 9px;
       background: $white;
       box-shadow: $outer-shadow2;
 
       @include mq(lg) {
-        width: 19%;
+        width: 20%;
+      }
+
+      @include mq(md) {
+        width: 23%;
+      }
+
+      @include mq(s) {
+        width: 48%;
+        max-width: 390px;
+        margin: 0 auto 20px;
+      }
+
+      @include mq(xs) {
+        width: 100%;
       }
 
       span {
@@ -84,6 +124,14 @@
 
       &:nth-child(3) {
 
+        @include mq(s) {
+          margin-bottom: 0;
+        }
+
+        @include mq(xs) {
+          margin-bottom: 20px;
+        }
+
         span {
 
           &:after {
@@ -94,6 +142,10 @@
 
       &:last-child {
 
+        @include mq(s) {
+          margin-bottom: 0;
+        }
+
         span {
 
           &:after {
@@ -103,6 +155,96 @@
             top: 11px;
             left: 10.65px;
           }
+        }
+      }
+    }
+  }
+
+  h3 {
+    position: relative;
+    margin: 40px auto 14px;
+
+    @include mq(md) {
+      margin: -13px auto 20px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 204px;
+      height: 223px;
+      background: url("../img/snow-f.png") no-repeat center/cover;
+      position: absolute;
+      top: -123px;
+      right: calc(100% - 174px);
+
+      @include mq(md) {
+        width: 148px;
+        height: 162px;
+        top: -9px;
+        right: -42px;
+      }
+    }
+  }
+
+  &__video {
+    box-sizing: border-box;
+    padding: 0 73px 0 72px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(xl) {
+      padding: 0 43px 0 42px;
+    }
+
+    @include mq(lg) {
+      padding: 0;
+    }
+
+    @include mq(xs) {
+      display: block;
+    }
+
+    figure.clip {
+      width: 47%;
+      max-width: 495px;
+      padding-bottom: 28.3%;
+      position: relative;
+      filter: drop-shadow($outer-shadow1);
+      cursor: pointer;
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        box-shadow: $outer-shadow1;
+      }
+
+      @include mq(xs) {
+        width: 100%;
+        margin: 0 auto 0;
+        padding-bottom: 60%;
+      }
+
+      .video-play {
+        width: 55px;
+        height: 57px;
+        background: url("../img/advantages/video-play.png") no-repeat center/cover;
+        border-radius: 50%;
+        box-shadow: $outer-shadow1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+
+        @include mq(xs) {
+          width: 37px;
+          height: 39px;
+        }
+      }
+
+      &:first-child {
+
+        @include mq(xs) {
+          margin-bottom: 20px;
         }
       }
     }

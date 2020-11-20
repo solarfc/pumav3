@@ -6,22 +6,48 @@
   background: $pale-red;
   padding: 62px 0 106px;
 
+  @include mq(md) {
+    padding: 38px 0 44px;
+  }
+
   &__content {
     position: relative;
 
     h3 {
       margin-bottom: 91px;
+
+      @include mq(md) {
+        margin-bottom: 25px;
+      }
     }
 
     &-slider {
 
+      @include mq(s) {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
       &__item {
         display: flex !important;
+
+        @include mq(s) {
+          display: block !important;
+        }
 
         figure {
           box-sizing: border-box;
           width: 50%;
           padding: 0 55px 0 45px;
+
+          @include mq(md) {
+            padding: 0 20px 0 15px;
+          }
+
+          @include mq(s) {
+            width: 100%;
+            padding: 0;
+          }
 
           p {
             color: $grey;
@@ -30,6 +56,13 @@
 
           h6 {
             color: $dark-red;
+          }
+
+          &:first-child {
+
+            @include mq(s) {
+              margin-bottom: 33px;
+            }
           }
         }
       }
@@ -40,6 +73,11 @@
       max-width: 330px;
       display: flex;
       justify-content: space-between;
+
+      @include mq(s) {
+        max-width: 290px;
+        margin: 40px auto 26px;
+      }
 
       .prev-arrow, .next-arrow {
         width: 15px;
@@ -62,6 +100,11 @@
       position: absolute;
       bottom: 0;
       left: 45px;
+
+      @include mq(s) {
+        position: static;
+        text-align: center;
+      }
 
       &:hover {
         text-decoration: none;

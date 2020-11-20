@@ -5,12 +5,21 @@
 .header {
   background: url("../img/header/bg.png") no-repeat center/cover, $main-gradient;
   padding: 30px 0 288px;
+  overflow: hidden;
+
+  @include mq(md) {
+    padding: 72px 0 104px;
+  }
 
   .delivery {
     max-width: 694px;
     margin: 0 auto;
     position: relative;
     z-index: 9;
+
+    @include mq(md) {
+      display: none;
+    }
 
     h6 {
       color: $pastel-red;
@@ -30,13 +39,28 @@
     margin-top: 52.39px;
     position: relative;
 
+    @include mq(md) {
+      margin-top: 0;
+      display: block;
+    }
+
     &-img {
-      width: 708px;
+      max-width: 708px;
       width: 59%;
       position: relative;
 
+      @include mq(md) {
+        width: 100%;
+      }
+
       img.logo {
         margin-left: 25.42%;
+
+        @include mq(s) {
+          width: 60%;
+          max-width: 383px;
+          margin-left: 24.82%;
+        }
       }
 
       figure {
@@ -50,6 +74,22 @@
           top: 149px;
         }
 
+        @include mq(md) {
+          position: relative;
+          top: 0;
+          margin-top: -60px;
+        }
+
+        @include mq(s) {
+          width: 118%;
+          left: -2%;
+          margin-top: -50px;
+        }
+
+        @include mq(xs) {
+          left: -3%;
+          margin-top: -25px;
+        }
 
         .sale {
           top: 81px;
@@ -63,6 +103,20 @@
           @include mq(lg) {
             top: 41px;
             left: 38px;
+          }
+
+          @include mq(md) {
+            top: 81px;
+            left: 218px;
+          }
+
+          @include mq(s) {
+            top: 23%;
+            left: 27.93%;
+          }
+
+          @include mq(xs) {
+            top: 19%;
           }
 
           h4 {
@@ -86,20 +140,51 @@
       width: 41%;
       margin-top: 96.61px;
 
+      @include mq(md) {
+        width: 100%;
+        margin-top: 19px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
       p.quote {
 
+        @include mq(md) {
+          max-width: 500px;
+          margin: 0 auto;
+          order: 1;
+        }
       }
 
       .price {
         margin: 55px auto 3px;
+
+        @include mq(md) {
+          margin: 6px auto -55px;
+          order: 2;
+        }
+
+        @include mq(xs) {
+          margin-bottom: -40px;
+        }
       }
 
       h6 {
         color: $white;
+
+        @include mq(md) {
+          order: 5;
+        }
       }
 
       a.to-order {
         margin-top: 20px;
+
+        @include mq(md) {
+          margin: -25px auto 17px;
+          order: 4;
+        }
       }
 
       img.boot {
@@ -107,11 +192,24 @@
         bottom: -344px;
         right: -297px;
         z-index: 5;
+
+        @include mq(md) {
+          position: relative;
+          top: 0;
+          left: -2px;
+          order: 3;
+          width: 455px;
+        }
+
+        @include mq(xs) {
+          width: 105%;
+          max-width: 445px;
+        }
       }
     }
 
     &:before, &:after {
-      content: "";
+      //content: "";
       display: block;
       position: absolute;
     }

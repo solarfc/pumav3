@@ -6,6 +6,14 @@
   background: $pale-red;
   padding: 93px 0 16px;
 
+  @include mq(md) {
+    padding: 40px 0 0;
+  }
+
+  @include mq(xl) {
+    position: relative;
+  }
+
   &__content {
     position: relative;
 
@@ -13,10 +21,20 @@
       color: $grey;
       max-width: 709px;
       margin-left: auto;
+
+      @include mq(md) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
 
     .price {
       margin: 154px 0 98px 50%;
+
+      @include mq(md) {
+        margin: 23px auto 16px;
+        text-align: center;
+      }
 
       span {
 
@@ -39,9 +57,38 @@
       top: -87px;
       left: -4px;
 
+      @include mq(lg) {
+        width: 380px;
+        top: 0;
+        left: -15px;
+      }
+
+      @include mq(md) {
+        width: 476px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
       .sale {
         top: 210px;
         right: -71px;
+
+        @include mq(lg) {
+          top: 120px;
+          right: -96px;
+        }
+
+        @include mq(md) {
+          top: 210px;
+          right: -71px;
+        }
+
+        @include mq(s) {
+          top: 182px;
+          right: -44px;
+        }
       }
 
       img {
@@ -49,6 +96,10 @@
         &.image {
           position: relative;
           z-index: 9;
+
+          @include mq(lg) {
+            width: 100%;
+          }
         }
 
         &.logo {
@@ -57,12 +108,28 @@
           top: 13px;
           left: 165px;
           opacity: 0.3;
+
+          @include mq(lg) {
+            width: 130px;
+            top: -15px;
+            left: 115px;
+          }
+
+          @include mq(md) {
+            width: 250px;
+            top: 13px;
+            left: 165px;
+          }
         }
       }
     }
 
     a.to-order {
       margin: 0 auto;
+
+      @include mq(md) {
+        margin: 12px auto;
+      }
     }
 
     h6 {
@@ -72,10 +139,18 @@
         color: $pastel-red;
         max-width: 245px;
         margin: 12px auto 64px;
+
+        @include mq(md) {
+          margin: 0 auto;
+        }
       }
 
       &.address {
         color: $light-grey;
+
+        @include mq(md) {
+          margin: 31px auto 6px;
+        }
 
         a {
           display: inline-block;
@@ -88,6 +163,10 @@
       position: absolute;
       bottom: -16px;
       right: -360px;
+
+      @include mq(xl) {
+        display: none;
+      }
     }
 
     &:before {
@@ -99,6 +178,23 @@
       position: absolute;
       bottom: 80.41px;
       left: -304.37px;
+    }
+  }
+
+  >img.boot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 326px;
+    display: none;
+
+    @include mq(xl) {
+      display: block;
+    }
+
+    @include mq(md) {
+      position: static;
+      margin: 0 0 0 auto;
     }
   }
 }
