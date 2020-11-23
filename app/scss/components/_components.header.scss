@@ -209,7 +209,7 @@
     }
 
     &:before, &:after {
-      //content: "";
+      content: "";
       display: block;
       position: absolute;
     }
@@ -232,6 +232,10 @@
         top: -97.39px;
         left: 0;
       }
+
+      @include mq(s) {
+        left: -12px;
+      }
     }
 
     &:after {
@@ -245,6 +249,14 @@
         width: 124px;
         height: 108px;
         right: 0;
+      }
+
+      @include mq(md) {
+        top: -72px;
+      }
+
+      @include mq(s) {
+        top: -85px;
       }
     }
   }

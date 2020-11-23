@@ -136,23 +136,30 @@
       box-sizing: border-box;
       width: 48.59%;
       max-width: 600px;
-      padding: 57px 0 19px;
-      background: $white;
-      box-shadow: $outer-shadow2;
       position: relative;
-
-      @include mq(md) {
-        padding: 27px 0 20px;
-      }
 
       @include mq(s) {
         width: 100%;
-        padding: 27px 25px 20px;
-        margin: 0 auto 40px;
       }
 
-      @include mq(xs) {
-        padding: 27px 10px 20px;
+      section {
+        padding: 57px 0 19px;
+        background: $white;
+        box-shadow: $outer-shadow2;
+        position: relative;
+
+        @include mq(md) {
+          padding: 27px 0 20px;
+        }
+
+        @include mq(s) {
+          padding: 27px 25px 20px;
+          margin: 0 auto 40px;
+        }
+
+        @include mq(xs) {
+          padding: 27px 10px 20px;
+        }
       }
 
 
@@ -174,7 +181,7 @@
           transform: translateX(-50%);
         }
 
-        @include mq(s) {
+        @include mq(xs) {
           max-width: 290px;
           transform: none;
           margin: 0 auto;
@@ -485,6 +492,13 @@
 
       &.winter-yellow {
 
+        section {
+
+          @include mq(lg) {
+            z-index: 15;
+          }
+        }
+
         .catalog__block-model__img {
           top: -9px;
           left: 16px;
@@ -526,10 +540,29 @@
           width: 204px;
           height: 238px;
           background: url("../img/snow-f.png") no-repeat center/cover;
+
+          @include mq(lg) {
+            width: 290px;
+            height: 306px;
+            background: url("../img/snow-s.png") no-repeat center/cover;
+            top: -119px;
+            left: -106px;
+          }
         }
       }
 
       &.winter-black {
+
+        section {
+
+          @include mq(lg) {
+            z-index: 15;
+          }
+
+          @include mq(s) {
+            z-index: 14;
+          }
+        }
 
         .catalog__block-model__img {
           top: -9px;
@@ -623,7 +656,7 @@
           @include mq(xs) {
             left: 2%;
             max-width: 290px;
-            margin: 0 auto;
+            margin: 5px auto;
           }
 
           h6 {
@@ -637,7 +670,15 @@
           height: 306px;
           background: url("../img/snow-s.png") no-repeat center/cover;
           top: -261.42px;
-          left: -290px;
+          right: calc(100%);
+
+          @include mq(lg) {
+            width: 204px;
+            height: 223px;
+            background: url("../img/snow-f.png") no-repeat center/cover;
+            top: -131px;
+            right: -53px;
+          }
         }
       }
 
@@ -697,7 +738,7 @@
           @include mq(xs) {
             left: 2%;
             max-width: 290px;
-            margin: 0 auto;
+            margin: 5px auto 6px;
           }
 
           h6 {
@@ -712,6 +753,11 @@
           background: url("../img/snow-t.png") no-repeat center/cover;
           bottom: -524px;
           right: -238px;
+
+          @include mq(lg) {
+            bottom: -180.5px;
+            right: -92.78px;
+          }
         }
       }
     }
@@ -756,6 +802,18 @@
 
         @include mq(md) {
           left: 0;
+        }
+
+        @include mq(xs) {
+          width: 49%;
+          min-width: 144px;
+        }
+
+        img {
+
+          @include mq(xs) {
+            width: 100%;
+          }
         }
       }
 

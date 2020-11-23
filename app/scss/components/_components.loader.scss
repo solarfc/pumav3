@@ -1,0 +1,100 @@
+/*
+    loader style
+ */
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background: $pale-red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+
+  @keyframes ldio-l5vke9xu63j {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
+  .ldio-l5vke9xu63j > div > div {
+    transform-origin: 100px 100px;
+    animation: ldio-l5vke9xu63j 5s linear infinite;
+    opacity: 0.8
+  }
+
+  .ldio-l5vke9xu63j > div > div > div {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    transform-origin: 100px 100px
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(1) {
+    animation-duration: 1.25s
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(1) > div {
+    background: #750c0c;
+    transform: rotate(0deg);
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(2) {
+    animation-duration: 1.6666666666666665s
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(2) > div {
+    background: #b60f0f;
+    transform: rotate(0deg);
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(3) {
+    animation-duration: 2.5s
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(3) > div {
+    background: #ff9900;
+    transform: rotate(0deg);
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(4) {
+    animation-duration: 5s
+  }
+
+  .ldio-l5vke9xu63j > div div:nth-child(4) > div {
+    background: #fff500;
+    transform: rotate(0deg);
+  }
+
+  .loadingio-spinner-wedges-yuoebyhu8b {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffeded;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ldio-l5vke9xu63j {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+
+  .ldio-l5vke9xu63j div {
+    box-sizing: content-box;
+  }
+}

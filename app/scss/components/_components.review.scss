@@ -74,6 +74,11 @@
       display: flex;
       justify-content: space-between;
 
+      @include mq(lg) {
+        position: relative;
+        z-index: 11;
+      }
+
       @include mq(s) {
         max-width: 290px;
         margin: 40px auto 26px;
@@ -123,6 +128,17 @@
       background: url("../img/decor.png") no-repeat center/cover;
       top: -62px;
       left: -190px;
+
+      @include mq(lg) {
+        width: 120px;
+        height: 158px;
+        top: -62px;
+        left: 0;
+      }
+
+      @include mq(md) {
+        display: none;
+      }
     }
 
     &:after {
@@ -131,6 +147,11 @@
       background: url("../img/snow-f.png") no-repeat center/cover;
       bottom: -39px;
       right: -242px;
+
+      @include mq(lg) {
+        bottom: -36px;
+        right: -76px;
+      }
     }
 
   }

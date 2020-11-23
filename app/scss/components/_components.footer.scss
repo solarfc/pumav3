@@ -71,6 +71,13 @@
         transform: translateX(-50%);
       }
 
+      @include mq(xs) {
+        width: 85%;
+        min-width: 248px;
+        left: 1.38%;
+        transform: none;
+      }
+
       .sale {
         top: 210px;
         right: -71px;
@@ -88,6 +95,11 @@
         @include mq(s) {
           top: 182px;
           right: -44px;
+        }
+
+        @include mq(xs) {
+          top: 33.13%;
+          right: -34.8px;
         }
       }
 
@@ -119,6 +131,13 @@
             width: 250px;
             top: 13px;
             left: 165px;
+          }
+
+          @include mq(xs) {
+            width: 52%;
+            min-width: 130px;
+            top: 7px;
+            left: 34.27%;
           }
         }
       }
@@ -178,6 +197,22 @@
       position: absolute;
       bottom: 80.41px;
       left: -304.37px;
+
+      @include mq(lg) {
+        width: 146px;
+        height: 227px;
+        bottom: 10px;
+        left: -84px;
+      }
+
+      @include mq(md) {
+        bottom: -188px;
+        left: 0;
+      }
+
+      @include mq(xs) {
+        left: -84px;
+      }
     }
   }
 

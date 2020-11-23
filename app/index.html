@@ -13,6 +13,28 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!-- loader start -->
+        <div class="loader">
+            <div class="loadingio-spinner-wedges-yuoebyhu8b">
+                <div class="ldio-l5vke9xu63j">
+                    <div>
+                        <div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- loader end -->
         <!-- header start -->
         <header class="header">
             <div class="container">
@@ -44,6 +66,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="bucket"></a>
         </header>
         <!-- header end -->
         <!-- main start -->
@@ -83,25 +106,6 @@
                 </div>
             </div>
             <!-- advantages end -->
-<!--            &lt;!&ndash; video start &ndash;&gt;-->
-<!--            <div class="video">-->
-<!--                <div class="container">-->
-<!--                    <div class="video__content">-->
-<!--                        <h3>Видеообзор зимней обуви</h3>-->
-<!--                        <div class="video__content-block">-->
-<!--                            <figure class="clip">-->
-<!--                                <img src="img/video/bg-first.jpg" alt="" class="video-media js-show-video" data-video="PisI9l29k4E">-->
-<!--                                <div class="video-play"></div>-->
-<!--                            </figure>-->
-<!--                            <figure class="clip">-->
-<!--                                <img src="img/video/bg-second.jpg" alt="" class="video-media js-show-video" data-video="PisI9l29k4E">-->
-<!--                                <div class="video-play"></div>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; video end &ndash;&gt;-->
             <!-- gallery start -->
             <div class="gallery">
                 <div class="gallery__content">
@@ -139,7 +143,7 @@
             </div>
             <!-- gallery end -->
             <!-- catalog start -->
-            <div class="catalog">
+            <div id="catalog" class="catalog">
                 <div class="container">
                     <h3>покупайте сейчас по самой низкой цене</h3>
                     <div class="delivery">
@@ -149,306 +153,314 @@
                     </div>
                     <div class="catalog__block">
                         <div class="catalog__block-model winter-yellow">
-                            <h5>puma tarrenz winter	 yellow</h5>
-                            <div class="catalog__block-model__img">
-                                <img src="img/catalog/7730/big.png" alt="">
-                                <h6>5.0/5.0</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <p><span>Сезон: </span>зима 2020-2021</p>
-                                </li>
-                                <li>
-                                    <p><span>Вид товара: </span>мужские ботинки</p>
-                                </li>
-                                <li>
-                                    <p><span>Верх: </span>натуральна кожа</p>
-                                </li>
-                                <li>
-                                    <p><span>Материал подкладки: </span>натуральный мех</p>
-                                </li>
-                                <li>
-                                    <p><span>Внешняя подошва: </span>резина</p>
-                                </li>
-                                <li>
-                                    <p><span>Внутренняя подошва: </span> ЕВА</p>
-                                </li>
-                                <li>
-                                    <p><span>Стиль: </span>comfort, active</p>
-                                </li>
-                                <li>
-                                    <p><span>Цвет: </span>желтый</p>
-                                </li>
-                            </ul>
-                            <div class="catalog__block-model__photo">
-                                <a href="img/catalog/7730/1-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7730/1.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7730/2-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7730/2.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7730/3-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7730/3.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7730/4-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7730/4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="catalog__block-model__info">
-                                <div class="price">
-                                    <span class="new-price small">1479грн</span>
-                                    <span class="old-price small">4190грн</span>
+                            <section>
+                                <h5>puma tarrenz winter	 yellow</h5>
+                                <div class="catalog__block-model__img">
+                                    <img src="img/catalog/7730/big.png" alt="">
+                                    <h6>5.0/5.0</h6>
                                 </div>
-                                <h6>Скидка на вторую пару 200грн</h6>
-                            </div>
-                            <form action="">
-                                <div class="form-group name">
-                                    <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                <ul>
+                                    <li>
+                                        <p><span>Сезон: </span>зима <output>2020-2021</output></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Вид товара: </span>мужские ботинки</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Верх: </span>натуральна кожа</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Материал подкладки: </span>натуральный мех</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внешняя подошва: </span>резина</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внутренняя подошва: </span> ЕВА</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Стиль: </span>comfort, active</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Цвет: </span>желтый</p>
+                                    </li>
+                                </ul>
+                                <div class="catalog__block-model__photo">
+                                    <a href="img/catalog/7730/1-1000.jpg" data-fancybox="winter-yellow">
+                                        <img src="img/catalog/7730/1.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7730/2-1000.jpg" data-fancybox="winter-yellow">
+                                        <img src="img/catalog/7730/2.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7730/3-1000.jpg" data-fancybox="winter-yellow">
+                                        <img src="img/catalog/7730/3.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7730/4-1000.jpg" data-fancybox="winter-yellow">
+                                        <img src="img/catalog/7730/4.jpg" alt="">
+                                    </a>
                                 </div>
-                                <div class="form-group tel">
-                                    <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                <div class="catalog__block-model__info">
+                                    <div class="price">
+                                        <span class="new-price small">1479грн</span>
+                                        <span class="old-price small">4190грн</span>
+                                    </div>
+                                    <h6>Скидка на вторую пару 200грн</h6>
                                 </div>
-                                <div class="select-box">
-                                    <select class="select-elem">
-                                        <option selected="selected" disabled value="">Выберите размер</option>
-                                        <option value="40">40 26,5 см</option>
-                                        <option value="41">41 27,5 см</option>
-                                        <option value="42">42 28 см</option>
-                                        <option value="43">43 28,5 см</option>
-                                        <option value="44">44 29 см</option>
-                                        <option value="45">45 29,5 см</option>
-                                    </select>
-                                </div>
-                                <div class="form-group order">
-                                    <button type="submit" class="button">заказать</button>
-                                </div>
-                            </form>
+                                <form id="mobileorder" action="">
+                                    <div class="form-group name">
+                                        <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                    </div>
+                                    <div class="form-group tel">
+                                        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                    </div>
+                                    <div class="select-box">
+                                        <select class="select-elem">
+                                            <option selected="selected" disabled value="">Выберите размер</option>
+                                            <option value="40">40 26,5 см</option>
+                                            <option value="41">41 27,5 см</option>
+                                            <option value="42">42 28 см</option>
+                                            <option value="43">43 28,5 см</option>
+                                            <option value="44">44 29 см</option>
+                                            <option value="45">45 29,5 см</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group order">
+                                        <button type="submit" class="button">заказать</button>
+                                    </div>
+                                </form>
+                            </section>
                         </div>
-                        <div class="catalog__block-model winter-black">
-                            <h5>puma tarrenz winter	 black</h5>
-                            <div class="catalog__block-model__img">
-                                <img src="img/catalog/7729/big.png" alt="">
-                                <h6>4.5/5.0</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <p><span>Сезон: </span>зима 2020-2021</p>
-                                </li>
-                                <li>
-                                    <p><span>Вид товара: </span>мужские ботинки</p>
-                                </li>
-                                <li>
-                                    <p><span>Верх: </span>натуральна кожа</p>
-                                </li>
-                                <li>
-                                    <p><span>Материал подкладки: </span>натуральный мех</p>
-                                </li>
-                                <li>
-                                    <p><span>Внешняя подошва: </span>резина</p>
-                                </li>
-                                <li>
-                                    <p><span>Внутренняя подошва: </span>ЕВА</p>
-                                </li>
-                                <li>
-                                    <p><span>Стиль: </span>comfort, active</p>
-                                </li>
-                                <li>
-                                    <p><span>Цвет: </span>чёрный</p>
-                                </li>
-                            </ul>
-                            <div class="catalog__block-model__photo">
-                                <a href="img/catalog/7729/1-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7729/1.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7729/2-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7729/2.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7729/3-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7729/3.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7729/4-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7729/4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="catalog__block-model__info">
-                                <div class="price">
-                                    <span class="new-price small">1479грн</span>
-                                    <span class="old-price small">4190грн</span>
+                        <div id="mobile-order" class="catalog__block-model winter-black">
+                            <section>
+                                <h5>puma tarrenz winter	 black</h5>
+                                <div class="catalog__block-model__img">
+                                    <img src="img/catalog/7729/big.png" alt="">
+                                    <h6>4.5/5.0</h6>
                                 </div>
-                                <h6>Скидка на вторую пару 200грн</h6>
-                            </div>
-                            <form action="">
-                                <div class="form-group name">
-                                    <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                <ul>
+                                    <li>
+                                        <p><span>Сезон: </span>зима <output>2020-2021</output></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Вид товара: </span>мужские ботинки</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Верх: </span>натуральна кожа</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Материал подкладки: </span>натуральный мех</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внешняя подошва: </span>резина</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внутренняя подошва: </span>ЕВА</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Стиль: </span>comfort, active</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Цвет: </span>чёрный</p>
+                                    </li>
+                                </ul>
+                                <div class="catalog__block-model__photo">
+                                    <a href="img/catalog/7729/1-1000.jpg" data-fancybox="winter-black">
+                                        <img src="img/catalog/7729/1.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7729/2-1000.jpg" data-fancybox="winter-black">
+                                        <img src="img/catalog/7729/2.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7729/3-1000.jpg" data-fancybox="winter-black">
+                                        <img src="img/catalog/7729/3.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7729/4-1000.jpg" data-fancybox="winter-black">
+                                        <img src="img/catalog/7729/4.jpg" alt="">
+                                    </a>
                                 </div>
-                                <div class="form-group tel">
-                                    <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                <div class="catalog__block-model__info">
+                                    <div class="price">
+                                        <span class="new-price small">1479грн</span>
+                                        <span class="old-price small">4190грн</span>
+                                    </div>
+                                    <h6>Скидка на вторую пару 200грн</h6>
                                 </div>
-                                <div class="select-box">
-                                    <select class="select-elem">
-                                        <option selected="selected" disabled value="">Выберите размер</option>
-                                        <option value="40">40 26,5 см</option>
-                                        <option value="41">41 27,5 см</option>
-                                        <option value="42">42 28 см</option>
-                                        <option value="43">43 28,5 см</option>
-                                        <option value="44">44 29 см</option>
-                                        <option value="45">45 29,5 см</option>
-                                    </select>
-                                </div>
-                                <div class="form-group order">
-                                    <button type="submit" class="button">заказать</button>
-                                </div>
-                            </form>
+                                <form action="">
+                                    <div class="form-group name">
+                                        <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                    </div>
+                                    <div class="form-group tel">
+                                        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                    </div>
+                                    <div class="select-box">
+                                        <select class="select-elem">
+                                            <option selected="selected" disabled value="">Выберите размер</option>
+                                            <option value="40">40 26,5 см</option>
+                                            <option value="41">41 27,5 см</option>
+                                            <option value="42">42 28 см</option>
+                                            <option value="43">43 28,5 см</option>
+                                            <option value="44">44 29 см</option>
+                                            <option value="45">45 29,5 см</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group order">
+                                        <button type="submit" class="button">заказать</button>
+                                    </div>
+                                </form>
+                            </section>
                         </div>
                         <div class="catalog__block-model rihanna-black">
-                            <h5>puma x fenty by rihanna <br>black</h5>
-                            <div class="catalog__block-model__img">
-                                <img src="img/catalog/7733/big.png" alt="">
-                                <h6>4.7/5.0</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <p><span>Сезон: </span>зима 2020-2021</p>
-                                </li>
-                                <li>
-                                    <p><span>Вид товара: </span>женские ботинки</p>
-                                </li>
-                                <li>
-                                    <p><span>Верх: </span>натуральна кожа</p>
-                                </li>
-                                <li>
-                                    <p><span>Материал подкладки: </span>натуральный мех</p>
-                                </li>
-                                <li>
-                                    <p><span>Внешняя подошва: </span>резина</p>
-                                </li>
-                                <li>
-                                    <p><span>Внутренняя подошва: </span>ЕВА</p>
-                                </li>
-                                <li>
-                                    <p><span>Стиль: </span>comfort, active</p>
-                                </li>
-                                <li>
-                                    <p><span>Цвет: </span>чёрный</p>
-                                </li>
-                            </ul>
-                            <div class="catalog__block-model__photo">
-                                <a href="img/catalog/7733/1-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7733/1.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7733/2-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7733/2.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7733/3-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7733/3.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7733/4-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7733/4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="catalog__block-model__info">
-                                <div class="price">
-                                    <span class="new-price small">1479грн</span>
-                                    <span class="old-price small">4190грн</span>
+                            <section>
+                                <h5>puma x fenty by rihanna <br>black</h5>
+                                <div class="catalog__block-model__img">
+                                    <img src="img/catalog/7733/big.png" alt="">
+                                    <h6>4.7/5.0</h6>
                                 </div>
-                                <h6>Скидка на вторую пару 200грн</h6>
-                            </div>
-                            <form action="">
-                                <div class="form-group name">
-                                    <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                <ul>
+                                    <li>
+                                        <p><span>Сезон: </span>зима <output>2020-2021</output></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Вид товара: </span>женские ботинки</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Верх: </span>натуральна кожа</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Материал подкладки: </span>натуральный мех</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внешняя подошва: </span>резина</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внутренняя подошва: </span>ЕВА</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Стиль: </span>comfort, active</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Цвет: </span>чёрный</p>
+                                    </li>
+                                </ul>
+                                <div class="catalog__block-model__photo">
+                                    <a href="img/catalog/7733/1-1000.jpg" data-fancybox="rihanna-black">
+                                        <img src="img/catalog/7733/1.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7733/2-1000.jpg" data-fancybox="rihanna-black">
+                                        <img src="img/catalog/7733/2.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7733/3-1000.jpg" data-fancybox="rihanna-black">
+                                        <img src="img/catalog/7733/3.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7733/4-1000.jpg" data-fancybox="rihanna-black">
+                                        <img src="img/catalog/7733/4.jpg" alt="">
+                                    </a>
                                 </div>
-                                <div class="form-group tel">
-                                    <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                <div class="catalog__block-model__info">
+                                    <div class="price">
+                                        <span class="new-price small">1479грн</span>
+                                        <span class="old-price small">4190грн</span>
+                                    </div>
+                                    <h6>Скидка на вторую пару 200грн</h6>
                                 </div>
-                                <div class="select-box">
-                                    <select class="select-elem">
-                                        <option selected="selected" disabled value="">Выберите размер</option>
-                                        <option value="36">36 23,5 см</option>
-                                        <option value="37">37 24 см</option>
-                                        <option value="38">38 24,5 см</option>
-                                        <option value="39">39 25 см</option>
-                                        <option value="40">40 25,5 см</option>
-                                    </select>
-                                </div>
-                                <div class="form-group order">
-                                    <button type="submit" class="button">заказать</button>
-                                </div>
-                            </form>
+                                <form action="">
+                                    <div class="form-group name">
+                                        <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                    </div>
+                                    <div class="form-group tel">
+                                        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                    </div>
+                                    <div class="select-box">
+                                        <select class="select-elem">
+                                            <option selected="selected" disabled value="">Выберите размер</option>
+                                            <option value="36">36 23,5 см</option>
+                                            <option value="37">37 24 см</option>
+                                            <option value="38">38 24,5 см</option>
+                                            <option value="39">39 25 см</option>
+                                            <option value="40">40 25,5 см</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group order">
+                                        <button type="submit" class="button">заказать</button>
+                                    </div>
+                                </form>
+                            </section>
                         </div>
                         <div class="catalog__block-model rihanna-white">
-                            <h5>puma x fenty by rihanna <br>white</h5>
-                            <div class="catalog__block-model__img">
-                                <img src="img/catalog/7734/big.png" alt="">
-                                <h6>4.7/5.0</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <p><span>Сезон: </span>зима 2020-2021</p>
-                                </li>
-                                <li>
-                                    <p><span>Вид товара: </span>женские ботинки</p>
-                                </li>
-                                <li>
-                                    <p><span>Верх: </span>натуральна кожа</p>
-                                </li>
-                                <li>
-                                    <p><span>Материал подкладки: </span>натуральный мех</p>
-                                </li>
-                                <li>
-                                    <p><span>Внешняя подошва: </span>резина</p>
-                                </li>
-                                <li>
-                                    <p><span>Внутренняя подошва: </span>ЕВА</p>
-                                </li>
-                                <li>
-                                    <p><span>Стиль: </span>comfort, active</p>
-                                </li>
-                                <li>
-                                    <p><span>Цвет: </span>белый</p>
-                                </li>
-                            </ul>
-                            <div class="catalog__block-model__photo">
-                                <a href="img/catalog/7734/1-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7734/1.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7734/2-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7734/2.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7734/3-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7734/3.jpg" alt="">
-                                </a>
-                                <a href="img/catalog/7734/4-1000.jpg" data-fancybox="">
-                                    <img src="img/catalog/7734/4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="catalog__block-model__info">
-                                <div class="price">
-                                    <span class="new-price small">1479грн</span>
-                                    <span class="old-price small">4190грн</span>
+                            <section>
+                                <h5>puma x fenty by rihanna <br>white</h5>
+                                <div class="catalog__block-model__img">
+                                    <img src="img/catalog/7734/big.png" alt="">
+                                    <h6>4.7/5.0</h6>
                                 </div>
-                                <h6>Скидка на вторую пару 200грн</h6>
-                            </div>
-                            <form action="">
-                                <div class="form-group name">
-                                    <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                <ul>
+                                    <li>
+                                        <p><span>Сезон: </span>зима <output>2020-2021</output></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Вид товара: </span>женские ботинки</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Верх: </span>натуральна кожа</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Материал подкладки: </span>натуральный мех</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внешняя подошва: </span>резина</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Внутренняя подошва: </span>ЕВА</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Стиль: </span>comfort, active</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Цвет: </span>белый</p>
+                                    </li>
+                                </ul>
+                                <div class="catalog__block-model__photo">
+                                    <a href="img/catalog/7734/1-1000.jpg" data-fancybox="rihanna-white">
+                                        <img src="img/catalog/7734/1.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7734/2-1000.jpg" data-fancybox="rihanna-white">
+                                        <img src="img/catalog/7734/2.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7734/3-1000.jpg" data-fancybox="rihanna-white">
+                                        <img src="img/catalog/7734/3.jpg" alt="">
+                                    </a>
+                                    <a href="img/catalog/7734/4-1000.jpg" data-fancybox="rihanna-white">
+                                        <img src="img/catalog/7734/4.jpg" alt="">
+                                    </a>
                                 </div>
-                                <div class="form-group tel">
-                                    <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                <div class="catalog__block-model__info">
+                                    <div class="price">
+                                        <span class="new-price small">1479грн</span>
+                                        <span class="old-price small">4190грн</span>
+                                    </div>
+                                    <h6>Скидка на вторую пару 200грн</h6>
                                 </div>
-                                <div class="select-box">
-                                    <select class="select-elem">
-                                        <option selected="selected" disabled value="">Выберите размер</option>
-                                        <option value="36">36 23,5 см</option>
-                                        <option value="37">37 24 см</option>
-                                        <option value="38">38 24,5 см</option>
-                                        <option value="39">39 25 см</option>
-                                        <option value="40">40 25,5 см</option>
-                                    </select>
-                                </div>
-                                <div class="form-group order">
-                                    <button type="submit" class="button">заказать</button>
-                                </div>
-                            </form>
+                                <form action="">
+                                    <div class="form-group name">
+                                        <input type="text" id="name_first" class="form-control" name="name_first" placeholder="Имя" required>
+                                    </div>
+                                    <div class="form-group tel">
+                                        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                                    </div>
+                                    <div class="select-box">
+                                        <select class="select-elem">
+                                            <option selected="selected" disabled value="">Выберите размер</option>
+                                            <option value="36">36 23,5 см</option>
+                                            <option value="37">37 24 см</option>
+                                            <option value="38">38 24,5 см</option>
+                                            <option value="39">39 25 см</option>
+                                            <option value="40">40 25,5 см</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group order">
+                                        <button type="submit" class="button">заказать</button>
+                                    </div>
+                                </form>
+                            </section>
                         </div>
                     </div>
                     <div class="catalog__spray">
@@ -538,7 +550,7 @@
                             </div>
                             <div class="review__content-slider__item">
                                 <figure>
-                                    <p>ТБотинки бомба. Особенно в мокрую погоду – не промокают. Уже 3 недели меня радуют.</p>
+                                    <p>Ботинки бомба. Особенно в мокрую погоду – не промокают. Уже 3 недели меня радуют.</p>
                                     <h6>Макс</h6>
                                 </figure>
                                 <figure>
@@ -587,13 +599,74 @@
                     </div>
                     <a href="#" class="to-order button">заказать</a>
                     <h6>Акция длится до <output>20.11.20</output>. Количество товара ограничено.</h6>
-                    <h6 class="address">Разработано <a href="http://itcreative.info/" target="_blank">ITcreative</a> 2020</h6>
+                    <h6 class="address">Разработано <a href="http://itcreative.info/" target="_blank">ITcreative</a> <output>2020</output></h6>
                     <img src="img/footer/boot.png" alt="" class="boot">
                 </div>
             </div>
             <img src="img/footer/boot.png" alt="" class="boot">
         </footer>
         <!-- footer end -->
+        <!-- body filter start -->
+        <div class="body-filter"></div>
+        <!-- body filter end -->
+        <!-- feedback start -->
+        <div class="feedback">
+            <span class="close"><img src="img/close.png" alt=""></span>
+            <p>Спасибо за ваш отзыв,
+                <br>он появится на сайте после проверки модератором</p>
+            <form class="order-form">
+                <div class="form-group name">
+                    <input type="text" class="form-control" name="name_first" id="name_first" placeholder="Имя" required>
+                </div>
+                <div class="form-group rating">
+                    <p>Оценка:</p>
+                    <div class="rating__area">
+                        <input type="radio" name="rating-star2" class="rating__control" id="rc6">
+                        <input type="radio" name="rating-star2" class="rating__control" id="rc7">
+                        <input type="radio" name="rating-star2" class="rating__control" id="rc8" checked>
+                        <input type="radio" name="rating-star2" class="rating__control" id="rc9">
+                        <input type="radio" name="rating-star2" class="rating__control" id="rc10">
+                        <label for="rc6" class="rating__item">
+                            <svg class="rating__star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </label>
+                        <label for="rc7" class="rating__item">
+                            <svg class="rating__star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </label>
+                        <label for="rc8" class="rating__item">
+                            <svg class="rating__star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </label>
+                        <label for="rc9" class="rating__item">
+                            <svg class="rating__star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </label>
+                        <label for="rc10" class="rating__item">
+                            <svg class="rating__star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                        <symbol id="star" viewBox="0 0 26 28">
+                            <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+                        </symbol>
+                    </svg>
+                </div>
+                <div class="form-group text">
+                    <textarea name="review" id="reviews" cols="30" rows="1" placeholder="Напишите ваш отзыв" required></textarea>
+                </div>
+                <div class="form-group send">
+                    <button name="submit">Отравить</button>
+                </div>
+            </form>
+        </div>
+        <!-- feedback end -->
         <script src="js/jq.js"></script>
         <script src="js/video.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
