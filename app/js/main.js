@@ -151,7 +151,9 @@ window.onload = function () {
     });
   };
 
-  if (/iPhone|iPod|Android/i.test(navigator.userAgent)) {
+  if (/iPhone|iPod|iPad|Android/i.test(navigator.userAgent)) {
+    console.log($('#mobileorder').offset().top);
+    console.log($('#mobile-order').offset().top);
     var href = $('#mobileorder').offset().top > $('#mobile-order').offset().top ? $('#mobileorder').offset().top - innerHeight : $('#mobile-order').offset().top;
     slowScroll(href);
     window.addEventListener('scroll', function () {

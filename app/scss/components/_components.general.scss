@@ -15,6 +15,7 @@ body {
   font-family: $r, sans-serif;
   font-size: 18px;
   line-height: 20px;
+  color: $pale-red;
 }
 
 .container {
@@ -339,6 +340,10 @@ a.to-order {
   max-width: 280px;
   padding: 18px 0 16px;
   border: 1px solid $white;
+
+  @include mq(xs) {
+    max-width: 390px;
+  }
 }
 
 .gallery, .photo {
@@ -452,6 +457,7 @@ a.bucket {
   @include mq(s) {
     width: 75px;
     height: 75px;
+    right: 15px;
   }
 
   &:after {
@@ -470,5 +476,9 @@ a.bucket {
       top: 21px;
       left: 16.5px;
     }
+  }
+
+  &:hover {
+    box-shadow: $outer-shadow2;
   }
 }

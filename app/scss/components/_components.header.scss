@@ -118,14 +118,6 @@
           @include mq(xs) {
             top: 19%;
           }
-
-          h4 {
-
-          }
-
-          h1 {
-
-          }
         }
 
         img {
@@ -233,8 +225,17 @@
         left: 0;
       }
 
+      @include mq(md) {
+        top: -72px;
+      }
+
       @include mq(s) {
         left: -12px;
+      }
+
+      @include mq(xs) {
+        width: 120px;
+        height: 308px;
       }
     }
 

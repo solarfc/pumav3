@@ -13,10 +13,6 @@
     padding: 30px 0 46px;
   }
 
-  h3 {
-
-  }
-
   .delivery {
     max-width: 785px;
     margin: 10px auto 88px;
@@ -110,7 +106,6 @@
       button {
         border: none;
         padding: 14.5px 0 16.5px;
-
       }
     }
   }
@@ -140,6 +135,7 @@
 
       @include mq(s) {
         width: 100%;
+        margin: 0 auto 40px;
       }
 
       section {
@@ -154,14 +150,12 @@
 
         @include mq(s) {
           padding: 27px 25px 20px;
-          margin: 0 auto 40px;
         }
 
         @include mq(xs) {
           padding: 27px 10px 20px;
         }
       }
-
 
       h5 {
         text-align: right;
@@ -185,10 +179,6 @@
           max-width: 290px;
           transform: none;
           margin: 0 auto;
-        }
-
-        img {
-
         }
 
         h6 {
@@ -267,9 +257,14 @@
           width: 23.64%;
           max-width: 130px;
           filter: drop-shadow($outer-shadow2);
+          transition: all 0.5s ease-in-out;
 
           @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             box-shadow: $outer-shadow2;
+
+            &:hover {
+              box-shadow: $outer-shadow1;
+            }
           }
 
           @include mq(md) {
@@ -289,6 +284,10 @@
 
           img {
             width: 100%;
+          }
+
+          &:hover {
+            filter: drop-shadow($outer-shadow1);
           }
         }
       }
@@ -312,10 +311,6 @@
 
         @include mq(s) {
           padding: 0;
-        }
-
-        .price {
-
         }
 
         h6 {
@@ -370,10 +365,6 @@
 
           input {
             background: $pale-red;
-          }
-
-          button {
-
           }
 
           &.name, &.tel {
@@ -598,10 +589,20 @@
             left: 16px;
           }
         }
+
+        ul {
+
+          @include mq(lg) {
+            margin-top: 5px;
+          }
+
+          @include mq(md) {
+            margin-top: 0;
+          }
+        }
       }
 
       &.rihanna-black {
-        padding-top: 37px;
         margin: 50px 0 87px;
 
         @include mq(md) {
@@ -612,11 +613,26 @@
           margin: 0 auto 40px;
         }
 
+        section {
+          padding-top: 37px;
+
+          @include mq(s) {
+            padding-top: 27px;
+          }
+        }
+
         h5 {
+          margin-left: 44%;
           margin-right: 52px;
+          text-align: left;
+
+          @include mq(xl) {
+            margin-right: 0;
+          }
 
           @include mq(lg) {
-            margin-right: 0;
+            margin-left: 0;
+            text-align: center;
           }
 
           br {
@@ -683,7 +699,6 @@
       }
 
       &.rihanna-white {
-        padding-top: 37px;
         margin: 50px 0 87px;
 
         @include mq(md) {
@@ -694,11 +709,26 @@
           margin: 0 auto 72px;
         }
 
+        section {
+          padding-top: 37px;
+
+          @include mq(s) {
+            padding-top: 27px;
+          }
+        }
+
         h5 {
+          margin-left: 44%;
           margin-right: 52px;
+          text-align: left;
+
+          @include mq(xl) {
+            margin-right: 0;
+          }
 
           @include mq(lg) {
-            margin-right: 0;
+            margin-left: 0;
+            text-align: center;
           }
 
           br {
@@ -781,8 +811,6 @@
     &-img {
       width: 20.56%;
       max-width: 227px;
-      //width: 20.47%;
-      //max-width: 226px;
 
       @include mq(md) {
         width: 100%;
@@ -911,10 +939,6 @@
 
           input {
             background: $white;
-          }
-
-          button {
-
           }
 
           &.tel {

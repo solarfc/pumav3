@@ -6,13 +6,6 @@
   background: $pale-red;
   box-shadow: $outer-shadow2;
   padding: 0 0 60px;
-  //margin: -55px auto -155px;
-  //position: relative;
-  //z-index: 11;
-  //
-  //@include mq(md) {
-  //  margin: -63px auto -160px;
-  //}
 
   @include mq(md) {
     padding-bottom: 41px;
@@ -212,9 +205,14 @@
       position: relative;
       filter: drop-shadow($outer-shadow1);
       cursor: pointer;
+      transition: all 0.5s ease-in-out;
 
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         box-shadow: $outer-shadow1;
+
+        &:hover {
+          box-shadow: 0 0 5px rgba(80, 9, 84, 0.5);
+        }
       }
 
       @include mq(xs) {
@@ -234,6 +232,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
+        transition: all 0.5s ease-in-out;
 
         @include mq(xs) {
           width: 37px;
@@ -245,6 +244,14 @@
 
         @include mq(xs) {
           margin-bottom: 20px;
+        }
+      }
+
+      &:hover {
+        filter: drop-shadow(0px 0px 5px rgba(80, 9, 84, 0.5));
+
+        .video-play {
+          transform: translate(-50%, -50%) scale(1.2);
         }
       }
     }
